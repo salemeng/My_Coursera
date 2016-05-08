@@ -18,21 +18,20 @@ int calc_fib(int n) {
   if (n==0) {
   return 0;
   }
-  vector<int> F(n);
+  vector<int> F(n+1);
   F[0] = 0;
   F[1] = 1;
   for (int i=2; i<=n; ++i) {
     F[i]= F[i-1]+F[i-2];
-   // cout << F[i] << "\n";
+  //  cout << i << " :"<< F[i] << "\n";
   }
   return F[n];
 
 }
 
 int main() {
-    int n = 0;
-   cin >> n;
-
+  int n = 0; cin >> n;
+  // for (int n=0; n<=45; n++)
     cout << calc_fib(n) << '\n';
-    return 0;
+  return 0;
 }
