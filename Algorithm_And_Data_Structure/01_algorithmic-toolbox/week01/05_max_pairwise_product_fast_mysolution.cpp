@@ -12,15 +12,15 @@ long long  MaxPairwiseProduct(const vector<int>& numbers) {
       int n = numbers.size();
         for (int i = 0; i < n; ++i) {
                            if (numbers[i] > max_1) {
-                                 max_2 = max_1; cout << " set max_2 to " << max_2 <<"\n";
-                                 max_1 = numbers[i]; cout << "set max_1 to " << max_1 << "\n";
+                                 max_2 = max_1; //cout << " set max_2 to " << max_2 <<"\n";
+                                 max_1 = numbers[i]; //cout << "set max_1 to " << max_1 << "\n";
                                       }
                             else if (numbers[i] > max_2) {
-                                 max_2 = numbers[i]; cout << "set max_2 to " << max_2 << "\n";
+                                 max_2 = numbers[i];// cout << "set max_2 to " << max_2 << "\n";
                                       }
                 }
           result = (long long) max_1 * max_2;
-          cout<< max_1 << " " << max_2 << "\n";
+          //cout<< max_1 << " " << max_2 << "\n";
           return result;
 }
 
